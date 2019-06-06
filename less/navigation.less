@@ -8,12 +8,22 @@ nav {
   align-items: center;
   justify-content: flex-end;
   height: 100px;
+
+  @media @mobile {
+    display: block;
+    text-align: center;
+  }
   
   a {
     text-decoration: none;
     padding: 1em;
     color: @font-color;
-    
+
+    @media @mobile {
+      text-align: center;
+      display: inline-block;
+      padding: 10px 20px 0px 20px;
+    }
   }
 
   .fun-bus {
@@ -21,6 +31,10 @@ nav {
     margin: 0 auto;
     margin-left: 0px;
     padding-left: 0px;
+
+    @media @mobile {
+      padding-top: 20px;
+    }
   }
 
 }

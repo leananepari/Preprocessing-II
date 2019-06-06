@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 nav {
   max-width: 800px;
   width: 100%;
@@ -177,16 +183,34 @@ nav {
   justify-content: flex-end;
   height: 100px;
 }
+@media (max-width: 500px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+}
 nav a {
   text-decoration: none;
   padding: 1em;
   color: #212529;
+}
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px 0px 20px;
+  }
 }
 nav .fun-bus {
   justify-self: baseline;
   margin: 0 auto;
   margin-left: 0px;
   padding-left: 0px;
+}
+@media (max-width: 500px) {
+  nav .fun-bus {
+    padding-top: 20px;
+  }
 }
 .nav-wrap {
   width: 100%;
