@@ -65,17 +65,71 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn collapsible">Sign Me Up!</button>
+        <div class="form">
+          <form onsubmit="">
+              <p>Full name:</p><br><br>
+              <input class="input-form" type="text" name="fullname" value="">
+              <br><br>
+              <p>Email:</p><br><br>
+              <input class="input-form" type="text" name="email" value="">
+              <br><br>
+              <p>Phone:</p><br><br>
+              <input class="input-form" type="text" name="phone" value="">
+              <br><br>
+              <p>Instructions:</p><br><br>
+              <input class="input-form large" type="text" name="instructions" value="">
+          
+              <br><br>
+              <button class="button-form" type="submit" value="Submit">Submit</button>
+          </form> 
+        </div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn collapsible">Sign Me Up!</button>
+        <div class="form">
+            <form onsubmit="">
+                <p>Full name:</p><br><br>
+                <input class="input-form" type="text" name="fullname" value="">
+                <br><br>
+                <p>Email:</p><br><br>
+                <input class="input-form" type="text" name="email" value="">
+                <br><br>
+                <p>Phone:</p><br><br>
+                <input class="input-form" type="text" name="phone" value="">
+                <br><br>
+                <p>Instructions:</p><br><br>
+                <input class="input-form large" type="text" name="instructions" value="">
+            
+                <br><br>
+                <button class="button-form" type="submit" value="Submit">Submit</button>
+            </form> 
+          </div>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn collapsible">Sign Me Up!</button>
+        <div class="form">
+            <form onsubmit="">
+                <p>Full name:</p><br><br>
+                <input class="input-form" type="text" name="fullname" value="">
+                <br><br>
+                <p>Email:</p><br><br>
+                <input class="input-form" type="text" name="email" value="">
+                <br><br>
+                <p>Phone:</p><br><br>
+                <input class="input-form" type="text" name="phone" value="">
+                <br><br>
+                <p>Instructions:</p><br><br>
+                <input class="input-form large" type="text" name="instructions" value="">
+            
+                <br><br>
+                <button class="button-form" type="submit" value="Submit">Submit</button>
+            </form> 
+          </div>
       </div>
     </section>
   </div><!-- container -->
@@ -83,6 +137,21 @@
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
-
+  <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
 </body>
 </html>

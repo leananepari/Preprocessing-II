@@ -326,6 +326,7 @@ nav .fun-bus {
   background-color: #17A2B8;
   color: white;
   outline: 0;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -336,6 +337,7 @@ nav .fun-bus {
     background-color: #17A2B8;
     color: white;
     outline: 0;
+    cursor: pointer;
   }
 }
 .home .content-pick .destination .btn:hover {
@@ -346,4 +348,30 @@ nav .fun-bus {
     width: 100%;
     padding: 0px 20px 0px 20px;
   }
+}
+.home .content-pick .destination .form {
+  display: none;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+.home .content-pick .destination .form input {
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  outline: 0;
+}
+.home .content-pick .destination .form .large {
+  height: 60px;
+}
+.home .content-pick .destination .form .button-form {
+  padding: 10px;
+  width: 50%;
+  border-radius: 8px;
+  outline: 0;
+  border: 2px solid #17A2B8;
+  font-size: 15px;
+}
+.home .content-pick .destination .form .button-form:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
 }
