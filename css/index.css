@@ -205,14 +205,15 @@ nav {
 }
 nav a {
   text-decoration: none;
-  padding: 1em;
+  padding: 1em 1.75em 0 1.75em;
   color: #212529;
 }
 @media (max-width: 500px) {
   nav a {
     text-align: center;
     display: inline-block;
-    padding: 10px 20px 0px 20px;
+    padding: 30px;
+    padding-top: 10px;
   }
 }
 nav .fun-bus {
@@ -223,12 +224,18 @@ nav .fun-bus {
 }
 @media (max-width: 500px) {
   nav .fun-bus {
-    padding-top: 20px;
+    padding-top: 35px;
+  }
+}
+@media (max-width: 500px) {
+  nav .fun-bus h1 {
+    font-size: 3.2rem;
   }
 }
 .nav-wrap {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 20px;
 }
 .footer {
   width: 100%;
@@ -245,10 +252,10 @@ nav .fun-bus {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .header-content img {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
-.home .header-content h1 {
-  padding-bottom: 10px;
+.home .header-content h2 {
+  padding-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -334,9 +341,9 @@ nav .fun-bus {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 42px 10px 42px;
   font-size: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: #17A2B8;
   color: white;
   outline: 0;
@@ -345,9 +352,9 @@ nav .fun-bus {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 42px 10px 42px;
     font-size: 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #17A2B8;
     color: white;
     outline: 0;
@@ -366,13 +373,19 @@ nav .fun-bus {
 .home .content-pick .destination .form {
   display: none;
   overflow: hidden;
-  padding: 20px;
-  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .home .content-pick .destination .form {
     padding-left: 0px;
     padding-right: 23px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .form {
+    padding: 20px;
   }
 }
 .home .content-pick .destination .form input {

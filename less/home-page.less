@@ -4,11 +4,11 @@
     border-bottom: 2px dashed @navigation-border;
 
     img {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
-    h1 {
-      padding-bottom: 10px;
+    h2 {
+      padding-bottom: 20px;
     }
   }
 
@@ -117,12 +117,17 @@
       .form {
         display: none;
         overflow: hidden;
-        padding: 20px;
-        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
 
         @media @tablet {
           padding-left: 0px;
           padding-right: 23px;
+        }
+
+        @media @mobile {
+          padding: 20px;
         }
 
         input {
