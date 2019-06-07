@@ -1,1 +1,60 @@
 // Navigation Styles here
+
+nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+
+  @media @mobile {
+    display: block;
+    text-align: center;
+  }
+  
+  @media @tablet {
+    width: 90%;
+    margin: 0 auto;
+    height: 90px;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 1em 1.75em 0 1.75em;
+    color: @font-color;
+
+    @media @mobile {
+      text-align: center;
+      display: inline-block;
+      padding: 30px;
+      padding-top: 10px;
+    }
+  }
+
+  .fun-bus {
+    justify-self: baseline;
+    margin: 0 auto;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    @media @mobile {
+      padding-top: 35px;
+    }
+
+    h1 {
+      @media @mobile {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+}
+
+.nav-wrap {
+  width: 100%;
+  border-bottom: 2px dashed @navigation-border;
+  padding-bottom: 20px;
+}
