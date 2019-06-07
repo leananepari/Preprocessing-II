@@ -199,6 +199,8 @@ nav {
   nav {
     width: 90%;
     margin: 0 auto;
+    height: 90px;
+    align-items: center;
   }
 }
 nav a {
@@ -366,6 +368,12 @@ nav .fun-bus {
   overflow: hidden;
   padding: 20px;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination .form {
+    padding-left: 0px;
+    padding-right: 23px;
+  }
 }
 .home .content-pick .destination .form input {
   width: 100%;

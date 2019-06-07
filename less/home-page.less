@@ -102,7 +102,7 @@
   
         @media @mobile {
           width: 100%;
-          .button-mobile();
+          .button();
         }
       }
 
@@ -119,6 +119,11 @@
         overflow: hidden;
         padding: 20px;
         text-align: center;
+
+        @media @tablet {
+          padding-left: 0px;
+          padding-right: 23px;
+        }
 
         input {
           width: 100%;
